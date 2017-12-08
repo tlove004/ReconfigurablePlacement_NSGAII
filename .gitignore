@@ -1,0 +1,8 @@
+
+/out/
+/target/
+/.idea/workspace.xml
+/placement.out
+/.idea/libraries/
+/.idea/
+/ReconfigurablePlacement_NSGAII.iml

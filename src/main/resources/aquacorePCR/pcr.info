@@ -1,0 +1,26 @@
+Architecture:
+15x19 DMFB with 10 inputs, 4 outputs
+
+Operations:
+1. Input PCRMixture  (reservoir 4)
+2. Heat PCRMixture
+3. Heat PCRMixture
+4. Input Separation Medium   (reservoir 2)
+5. {mixture} = Mix PCRMixture with Separation Medium
+6. {PCRMixture, waste} = split mixture
+7. Sense PCRMixture
+8. Output PCRMixture    (reservoir 2)
+9. Output waste         (reservoir 4)
+
+Interference Graph:
+empty
+
+Communication Graph (costs given arbitrarily):
+1-2
+2-3
+3-5
+4-5
+5-6
+6-7
+6-8
+6-9
